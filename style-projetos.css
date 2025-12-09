@@ -1,0 +1,215 @@
+/* ====== Reset ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ====== Corpo ====== */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff9ef;
+    color: #151b54;
+}
+
+/* BOTÕES - PADRÃO GLOBAL */
+button {
+    color: #151b54;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    background-color: #fff;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+    width: 200px;
+    height: 60px;
+}
+
+button:hover {
+    box-shadow: 0px 0px 8px #fff;
+    transform: scale(1.05);
+}
+
+/* ESTILO DO CABEÇALHO */
+header {
+    width: 100%;
+    padding: 40px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    z-index: 9999;
+}
+
+header .interface {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+header .logo img {
+    max-width: 200px;
+}
+
+header .menu-desktop ul {
+    display: flex;
+    list-style: none;
+}
+
+header .menu-desktop ul li {
+    margin: 0 40px;
+}
+
+header .menu-desktop ul li a {
+    color: #151b54;
+    font-weight: 600;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.menu-desktop a:hover {
+    transform: scale(1.05);
+}
+
+/* MENU DINÂMICO */
+header.rolar {
+    background-color: #4FA38F;
+    padding: 20px 0;
+    box-shadow: 0 0 8px #00000061;
+}
+
+/* ====== Seção Projeto ====== */
+.projeto-tamar {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.projeto-tamar h2 {
+    text-align: center;
+    margin-top: 200px;
+    font-size: 70px;
+    margin-bottom: 25px;
+}
+
+/* Container da imagem */
+.projeto-tamar .imagem-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 200px;
+}
+
+.projeto-tamar .imagem-container img {
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Botão "Saiba mais" sobre a imagem */
+.projeto-tamar .btn-saiba {
+    position: absolute;
+    bottom: 35px;
+    font-family: 'Poppins', sans-serif;
+    right: 50px;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #151b54;
+    border: 2px solid #0a6063;
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.5);
+}
+
+.projeto-tamar .btn-saiba:hover {
+    transform: scale(1.05);
+}
+
+
+/* ESTILO DO RODAPÉ */
+footer {
+    padding: 40px 4%;
+    background-color: #FFFAF0;
+    box-shadow: 0 0 40px 10px hsl(0, 0%, 85%);
+}
+
+footer .interface {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+}
+
+footer .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .line-footer.borda {
+    border-top: 2px solid #151b54;
+}
+
+footer .line-footer p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #151b54;
+}
+
+footer .line-footer p a {
+    color: #151b54;
+}
+
+/* BOTÕES SOCIAIS */
+.btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #151b54;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+.btn-social i.bi-instagram {
+    color: #fff;
+}
+
+.btn-social i.bi-tiktok {
+    color: #fff;
+}
+
+/* ====== Responsividade ====== */
+@media (max-width: 768px) {
+    .menu {
+        gap: 10px;
+    }
+
+    .projeto-tamar h2 {
+        font-size: 40px;
+    }
+
+    .projeto-tamar .imagem-container img {
+        width: 90%;
+    }
+
+    .projeto-tamar .btn-saiba {
+        font-size: 14px;
+        bottom: 15px;
+        right: 20px;
+        padding: 8px 20px;
+    }
+}

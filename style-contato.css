@@ -1,0 +1,182 @@
+/* ====== Reset ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ====== Corpo ====== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #E8F5F3; /* fundo pastel suave */
+  color: #151b54;
+}
+
+/* BOTÕES - PADRÃO GLOBAL */
+button {
+    color: #151b54;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+    width: 200px;
+    height: 60px;
+}
+
+button:hover {
+    box-shadow: 0px 0px 8px #fff;
+    transform: scale(1.05);
+}
+
+/* ESTILO DO CABEÇALHO */
+header {
+    width: 100%;
+    padding: 40px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    z-index: 9999;
+}
+
+header .interface {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+header .logo img {
+    max-width: 200px;
+}
+
+header .menu-desktop ul {
+    display: flex;
+    list-style: none;
+}
+
+header .menu-desktop ul li {
+    margin: 0 40px;
+}
+
+header .menu-desktop ul li a {
+    color: #151b54;
+    font-weight: 600;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.menu-desktop a:hover {
+    transform: scale(1.05);
+}
+
+/* MENU DINÂMICO */
+header.rolar {
+    background-color: #4FA38F;
+    padding: 20px 0;
+    box-shadow: 0 0 8px #00000061;
+}
+
+/* ====== Conteúdo ====== */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 140px; /* espaço por causa do header fixo */
+}
+
+.form-box {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  padding: 50px;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.form-box h2 {
+  font-size: 28px;
+  color: #151b54;
+  margin-bottom: 10px;
+}
+
+.form-box p {
+  color: #6e76b3;
+  margin-bottom: 30px;
+}
+
+/* ====== Inputs ====== */
+.input-group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #151b54;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #4FA38F;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #333;
+  outline: none;
+  transition: .3s;
+  resize: none;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: #0a6063;
+  box-shadow: 0 0 8px rgba(10,96,99,0.3);
+}
+
+/* ====== Botão ====== */
+.btn {
+  width: 100%;
+  background-color: #a0c4ff;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .3s;
+  width: 500px;
+  height: 60px;
+}
+
+.btn:hover {
+  box-shadow: 0px 0px 8px #fff;
+  transform: scale(1.05);
+}
+
+/* ====== Responsividade ====== */
+@media (max-width: 768px) {
+  .form-box {
+    padding: 30px 20px;
+  }
+
+  header .menu-desktop ul li {
+    margin: 0 15px;
+  }
+
+  .btn {
+    font-size: 16px;
+  }
+}

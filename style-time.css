@@ -1,0 +1,209 @@
+/* ======== Reset ======== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ======== Layout geral ======== */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff9ef;
+    color: #151b54;
+}
+
+/* BOTÕES - PADRÃO GLOBAL */
+button {
+    font-family: 'Poppins', sans-serif;
+    color: #151b54;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #fff;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+    width: 200px;
+    height: 60px;
+}
+
+button:hover {
+    box-shadow: 0px 0px 8px #fff;
+    transform: scale(1.05);
+}
+
+/* ESTILO DO CABEÇALHO */
+header {
+    width: 100%;
+    padding: 40px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    z-index: 9999;
+}
+
+header .interface {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+header .logo img {
+    max-width: 200px;
+}
+
+header .menu-desktop ul {
+    display: flex;
+    list-style: none;
+}
+
+header .menu-desktop ul li {
+    margin: 0 40px;
+}
+
+header .menu-desktop ul li a {
+    color: #151b54;
+    font-weight: 600;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.menu-desktop a:hover {
+    transform: scale(1.05);
+}
+
+/* MENU DINÂMICO */
+header.rolar {
+    background-color: #4FA38F;
+    padding: 20px 0;
+    box-shadow: 0 0 8px #00000061;
+}
+
+/* ======== Seção Time ======== */
+.time {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.time h1 {
+    font-size: 70px;
+}
+
+.time h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.time p {
+    font-size: 16px;
+    margin-bottom: 100px;
+}
+
+.membros {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.membro {
+    text-align: center;
+}
+
+.membro img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* ======== Seção Quem Somos ======== */
+.quem-somos {
+    text-align: center;
+}
+
+.quem-somos h2 {
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.quem-somos img {
+    width: 70%;
+    max-width: 1000px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+.quem-somos-txt p {
+    margin-top: 50px;
+    font-size: 18px;
+    margin-bottom: 200px;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+}
+
+/* ESTILO DO RODAPÉ */
+footer {
+    padding: 40px 4%;
+    background-color: #FFFAF0;
+    box-shadow: 0 0 40px 10px hsl(0, 0%, 85%);
+}
+
+footer .interface {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+}
+
+footer .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .line-footer.borda {
+    border-top: 2px solid #151b54;
+}
+
+footer .line-footer p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #151b54;
+}
+
+footer .line-footer p a {
+    color: #151b54;
+}
+
+/* BOTÕES SOCIAIS */
+.btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #151b54;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+.btn-social i.bi-instagram {
+  color: #fff;
+}
+
+.btn-social i.bi-tiktok {
+  color: #fff;
+}

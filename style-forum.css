@@ -1,0 +1,183 @@
+/* ====== Reset ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #E8F5F3;
+  color: #151b54;
+}
+
+/* BOTÕES - PADRÃO GLOBAL */
+button {
+    color: #151b54;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+    width: 200px;
+    height: 60px;
+}
+
+button:hover {
+    box-shadow: 0px 0px 8px #fff;
+    transform: scale(1.05);
+}
+
+/* ESTILO DO CABEÇALHO */
+header {
+    width: 100%;
+    padding: 40px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    z-index: 9999;
+}
+
+header .interface {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+header .logo img {
+    max-width: 200px;
+}
+
+header .menu-desktop ul {
+    display: flex;
+    list-style: none;
+}
+
+header .menu-desktop ul li {
+    margin: 0 40px;
+}
+
+header .menu-desktop ul li a {
+    color: #151b54;
+    font-weight: 600;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.menu-desktop a:hover {
+    transform: scale(1.05);
+}
+
+/* MENU DINÂMICO */
+header.rolar {
+    background-color: #4FA38F;
+    padding: 20px 0;
+    box-shadow: 0 0 8px #00000061;
+}
+
+/* ====== topo ====== */
+.topo {
+  color: #151b54;
+  padding: 20px;
+  text-align: center;
+  margin-top: 200px;
+  font-size: 20px;
+}
+
+.topo a {
+  color: #6e76b3;
+  text-decoration: underline;
+  font-size: 0.9rem;
+}
+
+.topo a:hover {
+  text-decoration: none;
+}
+
+/* ====== Container ====== */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* ====== Novo Tópico ====== */
+.novo-topico {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+}
+
+.novo-topico h2 {
+  color: #151b54;
+  margin-bottom: 15px;
+}
+
+.novo-topico input, .novo-topico textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #4FA38F;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.novo-topico button {
+  background-color: #A0C4FF;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.novo-topico button:hover {
+  transform: scale(1.05);
+  background-color: #82B1FF;
+}
+
+/* ====== Lista de tópicos ====== */
+.lista-topicos h2 {
+  margin-bottom: 20px;
+  color: #4FA38F;
+}
+
+.topico {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform .2s;
+}
+
+.topico:hover {
+  transform: translateY(-3px);
+}
+
+.topico h3 a {
+  color: #151b54;
+  text-decoration: none;
+}
+
+.topico h3 a:hover {
+  text-decoration: underline;
+}
+
+.topico span {
+  display: block;
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 8px;
+}
